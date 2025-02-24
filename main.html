@@ -1,24 +1,26 @@
 
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< HEAD
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Portfolio Website</title>
-  <link rel="stylesheet" href="style.css">  
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script>
-    (function() {
-      emailjs.init("your_user_id"); // Replace with your EmailJS user ID
+  <link rel="stylesheet" href="style.css">
+  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "w4I83mcpfdLzGzJVu",
+      });
     })();
   </script>
   <style>
-    /* Your existing styles */
+    
     .contact-box {
       width: 50%;
-      background-color: green;
+      background-color: green; 
       padding: 20px;
       border-radius: 8px;
       margin: auto;
@@ -51,7 +53,7 @@
     }
 
     .button-container button {
-      background-color: blue;
+      background-color: blue; 
       color: white;
       border: none;
       height: 30px;
@@ -73,6 +75,39 @@
     .button-container button i.bx {
       margin-left: 5px;
     }
+
+    
+    footer {
+      background-color: #333; 
+      color: white;
+      padding: 20px;
+      text-align: center; 
+      position: relative; 
+      bottom: 0; 
+      width: 100%; 
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column; 
+      align-items: center; 
+    }
+
+    .footer-icons {
+      display: flex;
+      justify-content: center; 
+      margin-top: 10px; 
+    }
+
+    .footer-icons a {
+      margin: 0 10px; 
+      display: inline-block; 
+    }
+
+    .footer-icons img {
+      width: 30px; 
+      height: 30px;
+    }
   </style>
 </head>
 <body>
@@ -81,9 +116,9 @@
       <a href="#" class="logo">My Portfolio.</a>
       <ul>
         <li class="active"><a href="https://www.google.com">Home</a></li>
-        <li><a href="https://github.com/EmmanuelMose.">ViewWorks</a></li>
+        <li><a href="https://github.com/">ViewWorks</a></li>
         <li><a href="#contact">HireMe</a></li>
-        <li><a href="MyResume.docx" download>Resume</a>
+        <li><a href="MyResume.docx" download>Resume</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -93,7 +128,7 @@
         <h1> Hi, It's Emmanuel😊 </h1>
         <h2>I'm a
           <span style="--i:4;" data-text="Frontend Developer">Frontend Developer</span>
-          <span style="--i:3;" data-text="Backend Developer ">Backend Developer</span>
+          <span style="--i:3;" data-text="Backend Developer">Backend Developer</span>
           <span style="--i:2;" data-text="System Analyst">System Analyst</span>
           <span style="--i:1;" data-text="Designer">Designer</span>
         </h2>
@@ -101,17 +136,17 @@
         <div class="btn-sci">
           <a href="Emmanuel_CV.docx" download="Emmanuel_CV(2).docx" class="btn">Download CV</a>
           <div class="sci">
-            <a href="#"><i class='bx bxl-github'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-            <a href="#"><i class='bx bxl-twitter'></i></a>
-            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="https://github.com/."><i class='bx bxl-github'></i></a>
+            <a href=""><i class='bx bxl-linkedin'></i></a>
+            <a href="https://x.com/home"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.instagram.com/combmose/"><i class='bx bxl-instagram'></i></a>
           </div>
         </div>
       </div>
       <div class="home-img">
         <div class="img-box">
           <div class="img-item">
-            <img src="emmanuel.jpg.jpg" alt="">
+            <img src="emmanuel.jpg.jpg" alt="Emmanuel">
           </div>
         </div>
       </div>
@@ -132,6 +167,7 @@
         <textarea id="message" name="message" required></textarea>
         
         <div class="button-container">
+          
           <button type="submit"><span>Send via Email</span></button>
           <button type="button" id="whatsapp-btn">
             <span>Send via WhatsApp</span><i class='bx bxl-whatsapp'></i>
@@ -143,272 +179,66 @@
 
   <footer>
     <div class="footer-content">
-      <p>© 2025 Emmanuel Mose. All Rights Reserved.</p>
       <div class="footer-icons">
-        <a href="#"><i class='bx bxl-github'></i></a>
-        <a href="#"><i class='bx bxl-linkedin'></i></a>
-        <a href="#"><i class='bx bxl-twitter'></i></a>
-        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="https://github.com/."><img src="github.png" alt="GitHub"></a>
+        <a href="https://wa.me/254718146250"><img src="whatsup.png" alt="WhatsApp"></a>
+        <a href="https://x.com/home"><img src="twitter..png" alt="Twitter"></a>
+        <a href="https://www.facebook.com/profile.php?id=100086807377245"><img src="facebook..png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/combmose/"><img src="instagram.png" alt="Instagram"></a>
+        <a href="https://www.tiktok.com/@user7984862204094"><img src="tiktok.png" alt="TikTok"></a>
+        <a href="https://www.youtube.com/@EmmanuelMose-cd9ee"><img src="youtube.png" alt="YouTube"></a>
+        <a href="https://t.me/+254718146250"><img src="telegram.png" alt="Telegram"></a>
       </div>
     </div>
   </footer>
 
   <script>
+    
     document.getElementById("contact-form").addEventListener("submit", function(event) {
       event.preventDefault();
-      
+
       const email = document.getElementById("email").value;
       const phone = document.getElementById("phone").value;
+      const message = document.getElementById("message").value;
+
+      if (!email || !phone || !message) {
+        alert("Please fill in all fields.");
+        return;
+      }
+
+      const templateParams = {
+        email: email,
+        phone: phone,
+        message: message
+      };
+
+      emailjs.send('service_pzddavb', 'template_fom5bf2', templateParams)
+        .then(function(response) {
+          alert("Message Sent Successfully!");
+          document.getElementById("contact-form").reset(); 
+        }, function(error) {
+          alert("Failed to send message. Please try again later.");
+          console.error(error);
+        });
+    });
+
+
+    document.getElementById("whatsapp-btn").addEventListener("click", function() {
+      const phone = document.getElementById("phone").value;
+      const email = document.getElementById("email").value;
       const message = document.getElementById("message").value;
       
       if (!email || !phone || !message) {
         alert("Please fill in all fields.");
         return;
       }
-
-      emailjs.sendForm("your_service_id", "your_template_id", this).then(
-        function() { alert("Email sent successfully!"); },
-        function(error) { alert("Failed to send email: " + JSON.stringify(error)); }
-      );
-
-      document.getElementById("email").value = '';
-      document.getElementById("phone").value = '';
-      document.getElementById("message").value = '';
+      
+      const whatsappMessage = `Hello, my details are:\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`;
+      const encodedMessage = encodeURIComponent(whatsappMessage);
+      const whatsappURL = `https://wa.me/254718146250?text=${encodedMessage}`;
+      
+      window.open(whatsappURL, "_blank");
     });
-
-    document.getElementById("whatsapp-btn").addEventListener("click", function() {
-      const email = document.getElementById("email").value;
-      const phone = document.getElementById("phone").value;
-      const message = encodeURIComponent(document.getElementById("message").value);
-
-      if (!email || !phone || !message) {
-        alert("Please fill in all fields.");
-        return;
-     
-=======
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css"> 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script>
-        (function() {
-            emailjs.init("your_user_id"); // Replace with your EmailJS user ID
-        })();
-    </script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <style>
-        /* Your existing styles */
-        .contact-box {
-            width: 50%;
-            background-color: green;
-            padding: 20px;
-            border-radius: 8px;
-            margin: auto;
-            color: black; 
-        }
-
-        #contact-form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            color: black;
-        }
-
-        label {
-            color: black;
-        }
-
-        .button-container {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-
-        .button-container button {
-            background-color: blue;
-            color: white;
-            border: none;
-            height: 30px;
-            font-size: 14px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 0 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            white-space: nowrap;
-            padding: 0 15px;
-        }
-
-        .button-container button#whatsapp-btn {
-            padding: 0 10px;
-        }
-
-        .button-container button i.bx {
-            margin-left: 5px;
-        }
-
-        footer {
-            background-color: white ;
-            color: green;
-            padding: 20px;
-            height: 100px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px; 
-            margin-bottom: 20px;
-        }
-
-        .footer-content {
-            text-align: center;
-        }
-
-        .footer-icons a {
-            color: green;
-            size: 50px;
-            margin: 0 10px;
-            font-size: 40px;
-            display: inline-block; 
-        }
-
-        .footer-icons a img {
-            width: 20px;
-            height: 20px;
-            vertical-align: middle; 
-        }
-
-        
-
-    </style>
-</head>
-<body>
-    <nav class="navbar">
-        <a href="#" class="logo">My Portfolio.</a>
-        <ul>
-            <li class="active"><a href="https://www.google.com">Home</a></li>
-            <li><a href="https://github.com/.">ViewWorks</a></li>
-            <li><a href="#contact">HireMe</a></li>
-            <li><a href="MyResume.docx" download>Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section class="home">
-        <div class="home-info">
-            <h1> Hi, It's Emmanuel😊 </h1>
-            <h2>I'm a
-                <span style="--i:4;" data-text="Frontend Developer">Frontend Developer</span>
-                <span style="--i:3;" data-text="Backend Developer ">Backend Developer</span>
-                <span style="--i:2;" data-text="System Analyst">System Analyst</span>
-                <span style="--i:1;" data-text="Designer">Designer</span>
-            </h2>
-            <p>I am a computer science student at Masinde Muliro University, passionate about technology and innovation. I am focused on both frontend and backend development. I am also skilled in computing fields such as data science, machine learning, artificial intelligence, data analysis, and cybersecurity. My aim is to transform the world through technology.</p>
-            <div class="btn-sci">
-                <a href="Emmanuel_CV.docx" download="Emmanuel_CV(2).docx" class="btn">Download CV</a>
-                <div class="sci">
-                    <a href="https://github.com/."><i class='bx bxl-github'></i></a>
-                    <a href="https://www.linkedin.com/in/emmanuel-mose-823a35351/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B%2FWetMRupSdWdLyHh49y%2B4w%3D%3D"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://x.com/home"><i class='bx bxl-twitter'></i></a>
-                    <a href="https://www.instagram.com/combmose/"><i class='bx bxl-instagram'></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="home-img">
-            <div class="img-box">
-                <div class="img-item">
-                    <img src="emmanuel.jpg.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-        <div class="contact-box">
-            <h2 style="text-align: center;">Contact</h2>
-            <form id="contact-form">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <div class="button-container">
-                    <button type="submit"><span>Send via Email</span></button>
-                    <button type="button" id="whatsapp-btn">
-                        <span>Send via WhatsApp</span><i class='bx bxl-whatsapp'></i>
-                    </button>
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-icons">
-                <a href="https://github.com/."><img src="github.png" alt="GitHub"></a>
-                <a href="https://wa.me/254718146250 "><img src="whatsup.png" alt="WhatsApp"></a>
-                <a href="https://x.com/home"><img src="twitter..png" alt="Twitter"></a>
-                <a href="https://www.facebook.com/profile.php?id=100086807377245"><img src="facebook..png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/combmose/"><img src="instagram.png" alt="Instagram"></a>
-                <a href="https://www.tiktok.com/@user7984862204094"><img src="tiktok.png" alt="TikTok"></a>
-                <a href="https://www.youtube.com/@EmmanuelMose-cd9ee"><img src="youtube.png" alt="YouTube"></a>
-                <a href="https://t.me/+254718146250"><img src="telegram.png" alt="telegram"></a>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        document.getElementById("contact-form").addEventListener("submit", function(event) {
-            event.preventDefault();
-
-            const email = document.getElementById("email").value;
-            const phone = document.getElementById("phone").value;
-            const message = document.getElementById("message").value;
-
-            if (!email || !phone || !message) {
-                alert("Please fill in all fields.");
-                return;
-            }
-
-            emailjs.sendForm("your_service_id", "your_template_id", this).then(
-                function() { alert("Email sent successfully!"); },
-                function(error) { alert("Failed to send email: " + JSON.stringify(error)); }
-            );
-
-            document.getElementById("email").value = '';
-            document.getElementById("phone").value = '';
-            document.getElementById("message").value = '';
-        });
-
-        document.getElementById("whatsapp-btn").addEventListener("click", function() {
-            const email = document.getElementById("email").value;
-            const phone = document.getElementById("phone").value;
-            const message = encodeURIComponent(document.getElementById("message").value);
-
-            if (!email || !phone || !message) {
-                alert("Please fill in all fields.");
-                return;
-            }
-            // ... (Your WhatsApp sending logic here) ...
-            alert("WhatsApp functionality not yet implemented.  Please use email."); // Placeholder
-        });
-    </script>
+  </script>
 </body>
 </html>
->>>>>>> 363071b (Initial commit)
